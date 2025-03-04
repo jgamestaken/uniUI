@@ -8,9 +8,9 @@ I will try to maintain this project as much as I can, and you can find more help
 I've tried to make it as easy as possible to install uniUI, it's as simple as making a new ModuleScript in ReplicatedStorage and calling it uniUI, and pasting in the code from [the latest release](latest.lua).
 
 ## Current version info
-**➰ Current version:** 4.0b3 - 4.0 base 3 
-**✅ Backwards compatible with:** 4.0b1, 4.0b2 
-**⏩ Expected future compatibility:** 6 months 
+**➰ Current version:** 4.0b3 - 4.0 base 3  
+**✅ Backwards compatible with:** 4.0b1, 4.0b2  
+**⏩ Expected future compatibility:** 6 months  
 
 ## Changelog
 You can find the changelog [here](CHANGELOG.md).
