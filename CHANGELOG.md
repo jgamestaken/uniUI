@@ -1,5 +1,10 @@
 ![logo](https://github.com/user-attachments/assets/4889b3b7-8c18-4861-87a5-1ea289a8d98d)
 
+# 4.0b4
+
+- **Critical Bugfix**
+  - uniUI.object.new - Function didn't immediately update because the function was using TweenService, a quick fix was implemented so that this now instantly sets all properties.
+
 # 4.0b3
 
 - **Deprecated functions**
