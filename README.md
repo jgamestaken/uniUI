@@ -9,7 +9,7 @@ I've tried to make it as easy as possible to install uniUI, it's as simple as ma
 
 ## Current version info
 **➰ Current version:** 4.0b4 - 4.0 base 4  
-**✅ Backwards compatible with:** 4.0b1, 4.0b2, 4.0b3 
+**✅ Backwards compatible with:** 4.0b1, 4.0b2, 4.0b3  
 **⏩ Expected future compatibility:** 6 months  
 
 ## Changelog
