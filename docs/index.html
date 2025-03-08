@@ -1,1 +1,348 @@
-Hi.
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>
+        Welcome - uniUI
+    </title>
+    <meta name="theme-color" content="#ffffff">
+    <meta name="description" content="Welcome"/>
+    <link rel="icon" type="image/svg+xml" href="https://jgamestaken.github.io"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="https://jgamestaken.github.io">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://jgamestaken.github.io">    
+        
+    <meta property="og:image" content="https://jgamestaken.github.io"/>
+    <meta property="og:url" content="https://jgamestaken.github.io/uniUI/">
+    <meta property="og:title" content="Welcome - uniUI" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Welcome"/>
+    
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content=""/>
+    <meta name="twitter:title" content="Welcome - uniUI" />
+    <meta name="twitter:description" content="Welcome" />
+    <meta name="twitter:image" content="https://jgamestaken.github.io"/>
+
+    <link rel="canonical" href="https://jgamestaken.github.io/uniUI/">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin=""/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&subset=latin&display=swap"
+          rel="stylesheet"/>
+    
+    <link rel="preload" href="https://jgamestaken.github.io/uniUI/_lib/index.css" as="style">
+    <link rel="stylesheet" href="https://jgamestaken.github.io/uniUI/_lib/index.css"/>
+    <style>
+        :root {
+            color-scheme: light dark;
+        }
+        html {
+            scroll-padding-top: 120px;
+            visibility: hidden;
+            opacity: 0;
+        }
+    </style>
+    <script>
+        function getInitialTheme() {
+            const savedTheme = localStorage.getItem('theme') || 'system';
+            if (savedTheme === 'light' || savedTheme === 'dark') return savedTheme;
+            return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        const theme = getInitialTheme();
+        document.documentElement.classList.add('theme-' + theme);
+    </script>
+    
+</head>
+<body>
+
+<div id="root">
+    <sl-drawer id="menu-drawer" label="Documentation" class="drawer__control" placement="top">
+        <div class="body__drawer">
+            <div class="items">
+                
+                    
+                        <sl-button 
+                            class="nav_button  current " 
+                            size="medium" 
+                            href="/uniUI/"
+                        >
+                            Documentation
+                        </sl-button>
+                         
+                
+            </div>
+            <sl-divider class="divider__drawer"></sl-divider>
+            <nav class="tree">
+                <div class="scroll-panel">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="h66gUcrIk3t7v3XqyZ187" 
+                                            style="--indent-level: 0"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/uniUI/">Welcome</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </div>
+            </nav>
+        </div>
+    </sl-drawer>
+
+    <div class="body__wrapper">
+        <div class="nav__container">
+            <nav>
+                <div class="border-box"></div>
+                <div class="logo">
+                    
+                        <div class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+  <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+</svg>
+
+                        </div>
+                    
+                    <div>
+                        
+                            <span class="line-clamp-1">uniUI</span>
+                        
+                    </div>
+                </div>
+                <div class="items">
+                    <div class="container">
+                        
+                            
+                                <sl-button 
+                                    class="nav_button  current " 
+                                    size="medium" 
+                                    href="/uniUI/"
+                                >
+                                    Documentation
+                                </sl-button>
+                                                    
+                        
+                    </div>
+                </div>
+                <div class="search">
+                    <div>
+                        <sl-button id="search-button" class="search_button">
+                            <sl-icon slot="prefix" name="search"></sl-icon>
+                            Search
+                            <div slot="suffix">
+                                <div class="button__prefix-wrapper">
+                                    <div class="button__prefix-container">
+                                        <sl-icon name="command"></sl-icon>
+                                        <span class="font-w-semibold">K</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </sl-button>
+                    </div>
+                    <div>
+                        <sl-dropdown id="theme-selector" hoist>
+                            <sl-button slot="trigger" class="nav_button">
+                                <sl-icon id="theme-selector-icon" slot="prefix" name="sun"></sl-icon>
+                            </sl-button>
+                            <sl-menu id="theme-selector-menu">
+                                <sl-menu-item type="checkbox" value="light">Light</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="dark">Dark</sl-menu-item>
+                                <sl-menu-item type="checkbox" value="system">System</sl-menu-item>
+                            </sl-menu>
+                        </sl-dropdown>
+                    </div>
+                    <div class="menu">
+                        <sl-button id="menu-open-trigger" class="nav_button" outline>
+                            <sl-icon slot="prefix" name="list"></sl-icon>
+                        </sl-button>
+                    </div>
+                </div>
+            </nav>    
+        </div>
+        <div class="content__container">
+            <aside class="tree">
+                <nav id="nav-tree" class="tree">
+                    
+                        
+                            
+                            
+                            
+                                <sl-tree class="tree__with_lines" selection="leaf">
+                                    
+                                
+                                    
+                                        <sl-tree-item 
+                                            id="h66gUcrIk3t7v3XqyZ187" 
+                                            style="--indent-level: 0"
+                                             selected 
+                                            class="leaf"
+                                        >
+                                            <a href="/uniUI/">Welcome</a>
+                                        </sl-tree-item>                                        
+                                    
+                                
+                            
+                                </sl-tree>
+                            
+                        
+                        
+                </nav>
+                <nav id="white-label-container" class="menu">
+                    <a class="white-label" href="https://tiledocs.com" target="_blank">
+                        <div class="card-container">
+                            <div class="icon-section">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
+                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z"/>
+                                </svg>
+                            </div>
+                            <div class="title-section">
+                                <sl-tooltip hoist style="--max-width: 30ch;" placement="top-start" content="This documentation site was created using TileDocs, a fast and user-friendly editor for building and hosting documentation projects.">
+                                    <span>Made with TileDocs</span>
+                                <sl-tooltip>
+                            </div>
+                        </div>
+                    </a>
+                </nav>
+            </aside>
+            
+            <article>
+                <main>
+                    <div class="content">
+                        <h1 id="welcome!" dir="ltr"><span style="white-space: pre-wrap;">Welcome!</span></h1><p dir="ltr"><span style="white-space: pre-wrap;">This is the documentation for the simple-to-use UI library for Roblox, called uniUI.</span><br><span style="white-space: pre-wrap;">This is a lightweight module, made for developer comfort, we have a Discord server, and a GitHub which gets checked regularly.</span></p><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-teal-50); border: 1px solid var(--sl-color-teal-200);"><div class="callout-box-icon"><sl-icon name="lightbulb" style="color: var(--sl-color-teal-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-teal-600);"><p><b><strong style="white-space: pre-wrap;">Watch out!</strong></b></p><p dir="ltr"><span style="white-space: pre-wrap;">Even though I try to maintain this library and it's documentation as much as possible, it's not an guarantee that it will always be supported.</span></p></div></div></div><p dir="ltr"><span style="white-space: pre-wrap;">If you are new to uniUI, we recommend to check out the installation guide down below.</span></p><hr><h2 id="quick-start-guide" dir="ltr"><span style="white-space: pre-wrap;">Quick start guide</span></h2><p dir="ltr"><span style="white-space: pre-wrap;">To follow this guide, you will need:</span></p><ul><li value="1"><span style="white-space: pre-wrap;">A computer that supports Roblox Studio</span></li><li value="2"><span style="white-space: pre-wrap;">A Roblox account.</span></li><li value="3"><span style="white-space: pre-wrap;">Reasonable experience with the Roblox Studio</span></li></ul><div class="callout-box-wrapper"><div class="callout-box" style="background-color: var(--sl-color-neutral-50); border: 1px solid var(--sl-color-neutral-200);"><div class="callout-box-icon"><sl-icon name="info-lg" style="color: var(--sl-color-neutral-400);"></sl-icon></div><div class="callout-box-content" style="color: var(--sl-color-neutral-600);"><p><b><strong style="white-space: pre-wrap;">Experience with Roblox</strong></b></p><p><span style="white-space: pre-wrap;">If you don't have experience with Roblox Studio yet, there's plenty of starter guides to find on YouTube, or you can follow one of the built-in studio tutorials as well!</span></p></div></div></div><h3 id="getting-the-source-code" dir="ltr"><span style="white-space: pre-wrap;">Getting the source code</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Please get the source code from a trusted source to make sure you are using a genuine version of uniUI.</span></p><div class="tabs-group-wrapper"><sl-tab-group><sl-tab slot="nav" panel="panel_0">GitHub</sl-tab><sl-tab-panel name="panel_0"><p><span style="white-space: pre-wrap;">To get the source code from GitHub, navigate to the </span><a href="https://github.com/jgamestaken/uniUI/blob/main/latest.lua" target="_blank" rel="noreferrer"><span style="white-space: pre-wrap;">latest source code file</span></a><span style="white-space: pre-wrap;"> and click the "Copy raw file" button.</span><br><span style="white-space: pre-wrap;">You can now continue to the next step!</span></p></sl-tab-panel><sl-tab slot="nav" panel="panel_1">Discord</sl-tab><sl-tab-panel name="panel_1"><p dir="ltr"><span style="white-space: pre-wrap;">If you are in the Discord server, you can get your module by downloading the file from the source-code channel and then copying the file's contents onto your clipboard, you can do this by opening it in an executable like Notepad.</span></p></sl-tab-panel></sl-tab-group></div><h3 id="installing-uniui" dir="ltr"><span style="white-space: pre-wrap;">Installing uniUI</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Now that you have the source code on your clipboard, you'll have to add it into your Roblox experience.</span><br><span style="white-space: pre-wrap;">uniUI is a module, as such it is supposed to be situated in a ModuleScript, you will have to create one and put the code you have from your clipboard in there.</span><br><span style="white-space: pre-wrap;">The ModuleScript can be situated anywhere, as long as it's accessible by the scripts you want it to use.</span></p><h3 id="calling-uniui-in-a-script" dir="ltr"><span style="white-space: pre-wrap;">Calling uniUI in a script</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">Now that uniUI has been installed, you can call it in scripts as shown in the example below.</span></p><div class="code-block"><div class="toolbar-cell"><div class="language-title">Luau</div><div><sl-copy-button value="local path = REPLACE_WITH_UNIUI_LOCATION -- Specify the uniUI location.
+
+local uniUI = require(path) -- Call the module, it will initialize." copy-label="Copy to clipboard" success-label="The code is copied to clipboard"></sl-copy-button></div></div><div class="code-cell" style="height: 99.6px;"><div class="container"><pre class="shiki shiki-themes" style="background-color:#f1f5f9;--shiki-dark-bg:#0d1117;color:#1f2328;--shiki-dark:#e6edf3" tabindex="0"><code class="code-view"><span class="line" data-line="1"><span style="color:#CF222E;--shiki-dark:#FF7B72">local</span><span style="color:#1F2328;--shiki-dark:#E6EDF3"> path </span><span style="color:#CF222E;--shiki-dark:#FF7B72">=</span><span style="color:#0550AE;--shiki-dark:#79C0FF"> REPLACE_WITH_UNIUI_LOCATION</span><span style="color:#6E7781;--shiki-dark:#8B949E"> -- Specify the uniUI location.</span></span>
+<span class="line" data-line="2"></span>
+<span class="line" data-line="3"><span style="color:#CF222E;--shiki-dark:#FF7B72">local</span><span style="color:#1F2328;--shiki-dark:#E6EDF3"> uniUI </span><span style="color:#CF222E;--shiki-dark:#FF7B72">=</span><span style="color:#0550AE;--shiki-dark:#79C0FF"> require</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">(path) </span><span style="color:#6E7781;--shiki-dark:#8B949E">-- Call the module, it will initialize.</span></span></code></pre></div></div></div><h3 id="making-your-first-ui" dir="ltr"><span style="white-space: pre-wrap;">Making your first UI</span></h3><p dir="ltr"><span style="white-space: pre-wrap;">After the installation has been finished, you can now use the module however you wish.</span><br><span style="white-space: pre-wrap;">Below is an example of how to create a simple </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">ScreenGui</span></code><span style="white-space: pre-wrap;"> and a </span><code spellcheck="false" style="white-space: pre-wrap;"><span class="text-code">Frame</span></code><span style="white-space: pre-wrap;">.</span></p><div class="code-block"><div class="toolbar-cell"><div class="language-title">Luau</div><div><sl-copy-button value="-- This code assumes uniUI has been set and initialized in &quot;uniUI&quot;
+
+local base = uniUI.base.new(&quot;ScreenGui&quot;, game.Players.LocalPlayer.PlayerGui)
+-- This function creates a new UI &quot;base&quot; such as a ScreenGui.
+
+local frame = uniUI.object.new(&quot;Frame&quot;, base, {Size=UDim2.new(1, 0, 1, 0)})
+-- This function creates a new Frame." copy-label="Copy to clipboard" success-label="The code is copied to clipboard"></sl-copy-button></div></div><div class="code-cell" style="height: 200.4px;"><div class="container"><pre class="shiki shiki-themes" style="background-color:#f1f5f9;--shiki-dark-bg:#0d1117;color:#1f2328;--shiki-dark:#e6edf3" tabindex="0"><code class="code-view"><span class="line" data-line="1"><span style="color:#6E7781;--shiki-dark:#8B949E">-- This code assumes uniUI has been set and initialized in "uniUI"</span></span>
+<span class="line" data-line="2"></span>
+<span class="line" data-line="3"><span style="color:#CF222E;--shiki-dark:#FF7B72">local</span><span style="color:#1F2328;--shiki-dark:#E6EDF3"> base </span><span style="color:#CF222E;--shiki-dark:#FF7B72">=</span><span style="color:#1F2328;--shiki-dark:#E6EDF3"> uniUI.base.</span><span style="color:#8250DF;--shiki-dark:#D2A8FF">new</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"ScreenGui"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="color:#0550AE;--shiki-dark:#79C0FF">game</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">.Players.LocalPlayer.PlayerGui)</span></span>
+<span class="line" data-line="4"><span style="color:#6E7781;--shiki-dark:#8B949E">-- This function creates a new UI "base" such as a ScreenGui.</span></span>
+<span class="line" data-line="5"></span>
+<span class="line" data-line="6"><span style="color:#CF222E;--shiki-dark:#FF7B72">local</span><span style="color:#1F2328;--shiki-dark:#E6EDF3"> frame </span><span style="color:#CF222E;--shiki-dark:#FF7B72">=</span><span style="color:#1F2328;--shiki-dark:#E6EDF3"> uniUI.object.</span><span style="color:#8250DF;--shiki-dark:#D2A8FF">new</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="color:#0A3069;--shiki-dark:#A5D6FF">"Frame"</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">, base, {Size</span><span style="color:#CF222E;--shiki-dark:#FF7B72">=</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">UDim2.</span><span style="color:#8250DF;--shiki-dark:#D2A8FF">new</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">(</span><span style="color:#0550AE;--shiki-dark:#79C0FF">1</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="color:#0550AE;--shiki-dark:#79C0FF">0</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="color:#0550AE;--shiki-dark:#79C0FF">1</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">, </span><span style="color:#0550AE;--shiki-dark:#79C0FF">0</span><span style="color:#1F2328;--shiki-dark:#E6EDF3">)})</span></span>
+<span class="line" data-line="7"><span style="color:#6E7781;--shiki-dark:#8B949E">-- This function creates a new Frame.</span></span></code></pre></div></div></div><p dir="ltr"><span style="white-space: pre-wrap;">Happy coding!</span></p><div class="image-box-wrapper centered"><div class="image-box" style="width: 30%;"><img src="https://github.com/user-attachments/assets/4889b3b7-8c18-4861-87a5-1ea289a8d98d" alt="Making coding UI fun" style="width: 100%; border-radius: var(--sl-border-radius-small); border: 1px solid var(--sl-color-neutral-300);"><div style="width: 100%;"><p dir="ltr" style="text-align: center;"><sub style="white-space: pre-wrap;"><span>Making coding UI fun</span></sub></p></div></div></div>
+                    </div>
+                </main>
+                <div class="footer">
+                    <div class="content">
+                        <div class="date">
+                            <div>Mar 8, 2025</div>
+                        </div>
+                         <div></div> 
+                         <div></div> 
+                    </div>
+                </div>
+            </article>
+            <aside class="toc">
+                <nav class="toc">
+                    
+                    <div class="title">
+                        <sl-icon class="icon" name="list-nested"></sl-icon>
+                        <div>
+                            On this page
+                        </div>
+                    </div>
+                    <div id="toc-list" class="list">
+                        
+                            
+                                <div class="heading-2 line-clamp-2">
+                                    <a href="/uniUI/#quick-start-guide">Quick start guide</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/uniUI/#getting-the-source-code">Getting the source code</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/uniUI/#installing-uniui">Installing uniUI</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/uniUI/#calling-uniui-in-a-script">Calling uniUI in a script</a>
+                                </div>
+                                
+                        
+                            
+                                <div class="heading-3 line-clamp-2">
+                                    <a href="/uniUI/#making-your-first-ui">Making your first UI</a>
+                                </div>
+                                
+                        
+                    </div>
+                    
+                </nav>
+            </aside>
+        </div>
+        <footer>
+            <div class="stack__column stack__gap-4 stack__center">
+                
+                <div class="stack__row stack__center">
+                    <span><span>Year &copy; Company Name</span></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+</div>
+<sl-dialog id="search-dialog" class="dialog_control dialog__search">
+    <div slot="label">
+        <p>Search</p>
+    </div>
+    <div class="pane stack__column stack__gap-4">
+        <div>
+            <sl-input
+                id="search-input"
+                type="text"
+                size="small"
+                autocomplete="off"
+                autofocus
+                clearable
+                placeholder="Type text you want to search..."
+            >
+            </sl-input>
+        </div>
+        <div id="search-result" class="stack__column stack__gap-4 search-result">
+        </div>
+        <div id="search-footer" class="footer"></div>
+    </div>
+</sl-dialog>
+<script type="module" src="https://jgamestaken.github.io/uniUI/_lib/index.js" data-shoelace="https://jgamestaken.github.io/uniUI/_lib"></script>
+<script type="module">
+    import {initPage, initTheme, initSearch, initToc} from 'https://jgamestaken.github.io/uniUI/_lib/init.js';
+    import {preInitTree} from 'https://jgamestaken.github.io/uniUI/_lib/pre.js';
+    preInitTree();
+    await initPage();
+    await initTheme('system');
+    await initSearch('https://jgamestaken.github.io/uniUI', '1741471339318');
+    document.documentElement.style.visibility = 'visible';
+    document.documentElement.style.opacity = '1';
+    initToc();
+</script>
+
+</body>
+</html>
