@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://jgamestaken.github.io/uniUI/docs/sitemap_index.xml
+Sitemap: https://jgamestaken.github.io/uniUI/sitemap_index.xml
