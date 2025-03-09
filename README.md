@@ -16,4 +16,4 @@ I've tried to make it as easy as possible to install uniUI, it's as simple as ma
 You can find the changelog [here](CHANGELOG.md).
 
 ## 🆕 Documentation
-Work in progress documentation can now be found at [the uniUI website](jgamestaken.github.io/uniUI).
+Work in progress documentation can now be found at [the uniUI website](https://jgamestaken.github.io/uniUI).
