@@ -1,0 +1,6 @@
+# Toolchain. Versions are a starting point; bump to the latest when setting up.
+[tools]
+rojo = "rojo-rbx/rojo@7.4.4"
+wally = "UpliftGames/wally@0.3.2"
+stylua = "JohnnyMorganz/StyLua@2.0.2"
+selene = "Kampfkarren/selene@0.28.0"

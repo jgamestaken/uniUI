@@ -1,0 +1,7 @@
+[package]
+name = "jgamestaken/uniui"
+description = "A small, script-based UI library for Roblox with states and animation."
+version = "5.0.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+exclude = ["dist", "tools", ".github", "CLAUDE.md"]
